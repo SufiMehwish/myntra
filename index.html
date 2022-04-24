@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+        * {font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-cont {
+            display: flex;
+            justify-content: space-between;
+            z-index: 999 !important;
+        
+        }
+        .nav-grand-div{
+          backdrop-filter: blur(40px);
+            
+        }
+        .navbar-cont > div > h1{
+            color: #fff;
+        }
+        .navlinks {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navlinks>a {
+            margin: 0 10px 0 10px;
+            background-color: transparent;
+         
+            color: #fff;
+        }
+        .navlinks>a:hover {
+            transition: 0.5s;
+            background-color: rgb(240, 237, 237);
+            border-radius: 0;
+            color: rgb(203, 14, 77);
+            font-weight: 700;
+            border-radius: 10px !important;
+            transform: scale(1.1);
+        }
+        .image1 {
+            height: 100vh;
+            width: 100%;
+           position: absolute;
+           top: 0;
+           left: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: -100;
+        }
+
+        .card-img2 {
+            height: 70%;
+            width: 60%;
+            padding: 10px 15px ;
+        }
+
+        .card-text {
+            text-align: center;
+        }
+
+        .col-md-3 {
+            width: 250px;
+            margin-left: 25px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            
+        }
+        .col-md-3:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .col-md-4:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .col-md-4{
+           width: 343px;
+            margin-left: 25px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .main-text{
+        transform: translateY(25rem);
+           display: flex;
+           justify-content: center;
+           
+         flex-direction: column;
+            color:aliceblue;
+        }
+        .products-main{
+        position: relative;
+        margin-top:25%;
+       
+        }
+        .main-text > .welcome{
+            font-size: 42px;
+        }
+        .main-text > div > p{
+            font-size: 20px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        .myntra-span{
+            color: rgb(203, 14, 77);
+            font-family: 'Bangers', cursive;
+            font-size: 52px;
+        }
+        .myntra-logo{
+            color: rgb(203, 14, 77) !important;
+            font-family: 'Bangers', cursive;
+            font-size: 42px;
+
+        }
+        .first-row{
+            z-index: 9999 !important;
+            background-color: #fff;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-grand-div">
+    <div class="container-fluid navbar-cont">
+        <div>
+            <h1 class="myntra-logo">MYNTRA</h1>
+        </div>
+        <div class="navlinks">
+            <a href="#" class="btn">HOME</a>
+            <a href="#" class="btn">ABOUT</a>
+            <a href="#" class="btn">CONTACT</a>
+            <a href="#" class="btn">ORDERS</a>
+        </div>
+    </div>
+</div>
+    <!--section image-->
+    <div class="text-center">
+        <img src="/images/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg" class="image1">
+        <div class=" main-text">
+            <div class="welcome">Welcome to <span class="myntra-span"> Myntra </span></div>
+            <div>
+                <p>Indias no.1 shopping site!</p>
+            </div>
+        </div>
+    </div>
+    <div class="products-main">
+    <div class="container text-center first-row">
+        <div class="col-md-3">
+            <div><img src="/images/iphone 12.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Iphone 12</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div><img src="/images/oneplus 8t.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Oneplus 8t</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div><img src="/images/redmi k20.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Redmi k20</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div><img src="/images/xiamo mi 10.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">xiamo mi 10</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br>
+    <div class="container text-center">
+        <div class="col-md-4">
+            <div><img src="/images/pms_1648710750.70877895.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Redmibook 15pro</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div><img src="/images/AORUS-VE.png" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Aorus-VE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div><img src="/images/6418600_sd.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Macbook</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+        
+
+    </div>
+    <br><br>
+    <div class="container text-center">
+        <div class="col-md-3">
+            <div><img src="/images/trukeairpods.png" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">trukeairpods</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div><img src="/images/airpods.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">Airpods</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div><img src="/images/intexheadphones.jpg" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">intexheadphones</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div><img src="/images/realme-earphones.png" class="card-img2"></div>
+            <div>
+                <h3 class="card-text">realme-earphones</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni est vel magnam, beatae at
+                    quis. Nisi
+                    est nesciunt totam deserunt dolore sint quasi deleniti omnis, culpa a dolores amet.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+
+</html>
